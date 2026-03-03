@@ -32,13 +32,13 @@ Weather data from OpenWeather
 
 ## 🌍 Live Demo
 
-[Click Here to View Live Project](your-link-here)
+[Click Here to View Live Project](https://niyatipandey.github.io/weather-app-js/)
 
 ## 📸 Screenshot
 
 ![Weather App Screenshot](weather_app.png)
 
-📂 Project Structure
+## 📂 Project Structure
 
 weather-app/
 
