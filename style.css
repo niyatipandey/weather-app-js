@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #fbc2eb, #f6d365);
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    gap: 15px;
+}
+.heading{
+    font-size: 50px;
+    font-weight: bolder;
+    text-shadow: 0 2px 6px rgba(86, 85, 85, 0.15);
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    color: rgb(44, 27, 60);
+}
+.search_box{
+    display: flex;
+    gap: 15px;
+}
+.city_input{
+    width: 200px;
+    height: 40px;
+    border-radius: 40px;
+    padding-left: 15px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    transition: 0.3s ease;
+    background: rgba(255, 255, 255, 0.6);
+}
+.city_input:focus{
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.7);
+}
+#search{
+    width: 140px;
+    height: 40px;
+    border-radius: 40px;
+    cursor: pointer;
+    padding: 5px 5px;
+    font-size: 17px;
+    font-weight: 600;
+    transition: box-shadow 0.2s ease;
+    outline: none;
+    border: none;
+}
+#search:hover{
+    box-shadow: 0 6px 12px rgba(0,0,0,0.12);
+}
+.weatherCard{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to right, #74ebd5, #ACB6E5);
+    gap: 15px;
+    align-items: center;
+    width: 320px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    padding: 20px;
+    border-radius: 20px;
+}
+#condition , #humidity , #wind {
+    width: 100%;
+    padding: 8px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+    transition: transform 0.3s ease , box-shadow 0.2s ease;
+}
+#condition {
+    background: linear-gradient(to right, #d4fcff, #b6fbff);
+}
+#humidity {
+    background: linear-gradient(to right, #c2e9fb, #a1c4fd);
+}
+#wind {
+    background: linear-gradient(to right, #e0c3fc, #8ec5fc);
+}
+#icon{
+    display: none;
+}
+#condition:hover,
+#humidity:hover,
+#wind:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+}
+#temperature{
+    font-size: 45px;
+}
+.weather_main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 5px;
+}
+.weather_main img{
+    width: 70px;
+    background: none;
+    border-radius: 0;
+}
