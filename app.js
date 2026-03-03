@@ -14,7 +14,10 @@ searchBtn.addEventListener("click",async ()=>{
     const response = await fetch(URL);
     const data = await response.json();
     
-    console.log(data);
+    if (data.cod !== 200) {
+    alert("City not found!");
+    return;
+    }
     document.getElementById("temperature").innerText = Math.round(data.main.temp) + "°C"
     document.getElementById("cityName").innerText = data.name;
     document.getElementById("condition").innerText = data.weather[0].description;
