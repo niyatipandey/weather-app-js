@@ -41,17 +41,13 @@ Weather data from OpenWeather
 ## 📂 Project Structure
 
 weather-app/
-
+```
  ├── index.html
- 
  ├── style.css
- 
  ├── app.js
- 
  ├── weather_app.png
- 
  └── README.md
- 
+ ```
 ## ⚙ How It Works
 
 User enters a city name.
